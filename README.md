@@ -1,1 +1,1 @@
-jojo is tuff and pro
+jojo suka alex, phoebe, aya
