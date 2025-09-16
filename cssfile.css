@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI';
   line-height: 1.6;
   background-color: #f5f9f2;
   color: #222;
@@ -116,3 +116,4 @@ a{
   color: #1f3d08;
   outline: none;
 }
+
