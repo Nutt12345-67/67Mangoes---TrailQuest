@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TrailQuest — Hiking Club Info Page</title>
   <link rel="stylesheet" href="cssfile.css" />
   <script src="jsfile.js"></script>
 </head>
 <body>
   <header class="hero">
-    
-    <h1 id="title" class="title" tabindex="0">TrailQuest Hiking Club</h1>
+    <h1 id="hero-title" class="hero-title" tabindex="0">TrailQuest Hiking Club</h1>
     <div class="buttons">
-      <button id="cheer-btn" pressed="false">
+      <button id="cheer-btn" aria-pressed="false">
         Cheer this club! <span id="cheer-count">0</span>
       </button>
       <button id="theme-btn">Trail Theme</button>
@@ -32,15 +31,15 @@
       <p>We love a variety of trails — from gentle forest walks to challenging mountain climbs. Here are some upcoming trail types:</p>
       <div class="trail-gallery">
         <figure>
-          <img src="blm" alt="Forest Trail" />
+          <img src="forest.jpg" alt="Forest Trail" />
           <figcaption>Forest Trails 🌲</figcaption>
         </figure>
         <figure>
-          <img src="blm" alt="Mountain Trail" />
+          <img src="mountain.jpg" alt="Mountain Trail" />
           <figcaption>Mountain Trails ⛰️</figcaption>
         </figure>
         <figure>
-          <img src="blm" alt="Lakeside Trail" />
+          <img src="lakeside.png" alt="Lakeside Trail" />
           <figcaption>Lakeside Trails 💧</figcaption>
         </figure>
       </div>
@@ -52,9 +51,9 @@
         Interested? We welcome you to join us on this amazing adventure. Connect with us via social media or just come along for a hike!
       </p>
       <div class="social-links">
-        <a href="https://facebook.com/trailquest" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-        <a href="https://instagram.com/trailquest" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-        <a href="https://twitter.com/trailquest" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+        <a href="https://facebook.com"aria-label="Facebook">Facebook</a>
+        <a href="https://instagram.com"ria-label="Instagram">Instagram</a>
+        <a href="https://twitter.com"aria-label="Twitter">Twitter</a>
       </div>
     </section>
   </main>
@@ -62,5 +61,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
