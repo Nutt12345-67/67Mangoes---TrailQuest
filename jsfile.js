@@ -60,7 +60,6 @@ themeBtn.addEventListener('click', () => {
   hero.style.backgroundColor = newPalette.accent;
   hero.style.color = newPalette.text;
 
-  // Update buttons background and color
   const buttons = document.querySelectorAll('button');
   buttons.forEach((btn) => {
     btn.style.backgroundColor = newPalette.background;
@@ -68,20 +67,17 @@ themeBtn.addEventListener('click', () => {
     btn.style.border = `1px solid ${newPalette.text}`;
   });
 
-  // Update social link backgrounds
   const socialLinks = document.querySelectorAll('.social-links a');
   socialLinks.forEach((link) => {
     link.style.backgroundColor = newPalette.accent;
     link.style.color = newPalette.background;
   });
 
-  // Update headings colors
   const headings = document.querySelectorAll('h2');
   headings.forEach((h) => {
     h.style.color = newPalette.accent;
     h.style.borderColor = newPalette.text;
   });
-
-  // Reset hero title text color as well
   heroTitle.style.color = newPalette.text;
 });
+
