@@ -59,30 +59,35 @@
         </section>
       </main>
      <script>
-     let count = 0;
-        const counterButton = document.getElementById('cheer-btn');
-        const heading = document.getElementById('cheer-count');
-        const container = document.getElementById('buttons');
-        function updateHeadingWithCount() {
-          heading.innerHTML = `<span id="cheer-count">${count}</span>`;
-        }
+  let count = 0;
+  const heading = document.getElementById("cheer-count");
+  const themeBtn = document.getElementById("theme-btn");
+  const heroTitle = document.getElementById("hero-title");
+  const heroSection = document.querySelector("header.hero"); // target the top background
 
-        function Clicks() {
-          count++;
-          updateHeadingWithCount();
-    }
+  function updateHeadingWithCount() {
+    heading.textContent = count;
+  }
 
-        function Change() {
-          document.getElementByTagName("div").style.background="color='#'+Math.floor(Math.random()*16777215).toString(16);"
-        }
-        function changetxt(){
-         document.getElementByTagName("hero-title").textContent="TrailQuest Hiking Club"
-        }
-         function changeback(){
-         document.getElementByTagName("hero-title").textContent="🌲⛰️ Hiking Club"
-        }
-         }
-     </script>
+  function Clicks() {
+    count++;
+    updateHeadingWithCount();
+  }
+
+  const colors = ["#014421", "#6B8E23", "#4B3621", "#708090", "#2F4F4F", "#9ACD32", "#A9A9A9"];
+  let colorIndex = 0;
+
+  function Change() {
+    heroSection.style.backgroundColor = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length;
+  }
+  heroTitle.addEventListener("mouseover", () => {
+    heroTitle.textContent = "🌲⛰️ Hiking";
+  });
+  heroTitle.addEventListener("mouseout", () => {
+    heroTitle.textContent = "TrailQuest Hiking Club";
+  });
+</script>
 
     </body>
     </html>
